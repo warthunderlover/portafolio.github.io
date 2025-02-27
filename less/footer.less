@@ -1,0 +1,41 @@
+@footer-bg: @primary-bg-color;
+@footer-text: #fff;
+@footer-link: #ccc;
+
+.footer {
+    background-color: @footer-bg;
+    color: @footer-text;
+    padding: 20px 0;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin: 10px 0 0;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+
+            a {
+                color: @footer-link;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
