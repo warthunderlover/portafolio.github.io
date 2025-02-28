@@ -17,9 +17,9 @@ on:
     jobs:
       deploy:
         enviroment:
-        name: github-pages
-        url: ${{ steps.github_pages.outputs.url }}
-        runs-on: ubuntu-latest
+          name: github-pages
+          url: ${{ steps.github_pages.outputs.url }}
+          runs-on: ubuntu-latest
       steps: 
         - name: Checkout(clonarrepositorio)
           uses: actions/checkout@v4
