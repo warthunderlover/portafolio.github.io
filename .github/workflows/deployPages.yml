@@ -19,8 +19,7 @@ on:
         enviroment:
         name: github-pages
         url: ${{ steps.github_pages.outputs.url }}
-
-      runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
       steps: 
         - name: Checkout(clonarrepositorio)
           uses: actions/checkout@v4
